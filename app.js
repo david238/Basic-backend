@@ -48,4 +48,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+var port  = 80;
+app.listen(port);
+
+console.log('listening on port', port);
+
 module.exports = app;
